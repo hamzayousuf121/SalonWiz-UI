@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    .dropdown-menu a {
+        color: black !important;
+        /* text-underline-position: below; */
+    }
+
+    hr {
+        margin-top: 0rem !important;
+        margin-bottom: 0rem !important;
+        border: 2 !important;
+        border-top: 2px solid rgba(0, 0, 0, .1);
+    }
+</style>
+
+<body class="body">
+
+    <nav class="navbar navbar-expand-lg topbarblue">
+        <a href="#"><img src="./icons/SalonWiz (1).png" class="img-fluid" style="vertical-align: super;"></a><span
+            class="white font-weight-bold" style="margin: 0% 1%;">-</span><span style="font-size: 20px"
+            class="white omnes">POS</span>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link omnes white p-0" href="#">Salon Name - Branch Name</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item omnes white">
+                    <span class="nav-link p-0">Date 18-03-2020</span>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link p-0 dropdown-toggle white omnes" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                        style="font-size: 20px;padding-left: 40px!important;">
+                        <i class="fa fa-user"></i><span style="padding:0px 8px;">Salon</span><i
+                            class="fa fa-angle-down"></i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+
+
+    <!-- //Dashboard -->
+    <div class="container-fluid">
+        <div class="topnav row">
+            <div style="width: 155px;" class="hover">
+                <a href="#dashboard">
+                    <img src="./icons/Dashboard (2).png" style="height: 40px;" />
+                    Dashboard</a>
+            </div>
+
+            <div style="width: 155px;" class="hover">
+                <a href="#pos">
+                    <img src="./icons/POS (2).png" alt="" style="height: 40px;">
+                    POS
+                </a>
+            </div>
+            <div style="width: 155px;" class="hover">
+                <a href="#services">
+                    <img src="./icons/Services (2).png" alt="Service" style="height: 40px;" />
+                    Services</a>
+            </div>
+            <div style="width: 175px;" class="hover">
+                <a href="#appointmentform">
+                    <img src="./icons/Appointment-Form (1).png" alt="" style="height: 40px;" /></a>
+                <span class="form">Appointment Form</span>
+            </div>
+            <div style="width: 175px;" class="hover">
+                <a href="#appointmentlist">
+                    <img src="./icons/Appointment-List (1).png" alt="" style="height: 40px;"></a>
+                <span class="list">Appointment List</span>
+            </div>
+            <div style="width: 155px;" class="hover">
+                <a href="#reports">
+                    <img src="./icons/Reports (1).png" alt="" style="height: 40px;">
+                    Reports</a>
+            </div>
+            <div style="width: 155px;" class="hover">
+                <a href="#dayopen">
+                    <img src="./icons/Day-Open (1).png" alt="" style="height: 40px; width: 50px;">
+                    Day Open</a>
+            </div>
+            <div style="width: 155px;" class="hover">
+                <a href="#dayend">
+                    <img src="./icons/Day-end (1).png" alt="" style="height: 40px; width: 50px;">
+                    Day End</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dashboard Navbar End -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 mt-5">
+                <div class="col-lg-6 col-md-6 col-6 col-sm-6 float-left">
+                    <h3 style="margin-left: -14px;">Appointment List</h3>
+                </div>
+                <div class="col-md-6 col-md-6 col-6 col-sm-6 float-right">
+                    <h4 class="text-right"><span class="text-right"
+                            style="margin-right: 5px; background: cadetblue; padding: 0 3px 0 3px;"><i
+                                class="fa fa-plus text-white"></i></span>Add new Appointment</h4>
+                </div>
+            </div>
+            <br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-12 ">
+
+                        <form action="" class="form-inline" method="get">
+                            <div class="form-group">
+                                <label for="date" id="label">Today-Yesterday</label>
+                                <input type="date" class="form-control ml-3" name="date" id="date"
+                                    placeholder="16-03-2020 - 16-3-2020">
+                                <span class="ml-3"><i class="fa fa-calendar text-info" style="font-size: 20px;">
+                                    </i></span>
+                            </div>
+                            <div class="input-group ml-5">
+                                <label for="store" class="mr-3" id="label">Store:</label>
+                                <input type="text" class="form-control" id="store">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <section class="mt-3">
+                    <!-- /.card-header -->
+                    <div class=" table-responsive-md ">
+                        <table id="example" class="table table-bordered table-striped">
+                            <thead>
+                                <tr class="text-white" style="background-color: darkgrey;">
+                                    <td>S.No</td>
+                                    <td>Customer Name</td>
+                                    <td>Contact Number</td>
+                                    <td>Email</td>
+                                    <td>Appointment Date</td>
+                                    <td>Appointment status</td>
+                                    <td>Action</td>
+                                </tr>
+                            </thead>
+                            <tbody class="table-striped">
+                                <tr>
+                                    <td>1 </td>
+                                    <td>Ali shahid </td>
+                                    <td>0321-2454454</td>
+                                    <td>hamzayousuf121@gmail.com</td>
+                                    <td>23-04-2020</td>
+                                    <td>Pending</td>
+                                    <td class="dropdown text-center"><i class="fa fa-cog dropdown-toggle"
+                                            style="color:#4339cf" data-toggle="dropdown"></i>
+                                        <ul class="dropdown-menu text-center">
+                                            <li><a href="#" class="text-center">Edit</a>
+                                                <hr>
+                                            </li>
+                                            <li><a href="#" class="text-center">Detail</a>
+                                                <hr>
+                                            </li>
+                                            <li><a href="#" class="text-center">Delete</a>
+                                                <hr>
+                                            </li>
+                                            <li><a href="#" class="text-center">Print</a>
+                                                <hr>
+                                            </li>
+                                            <li><a href="#" class="text-center">Start Service</a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1 </td>
+                                    <td>Ali shahid </td>
+                                    <td>0321-2454454</td>
+                                    <td>hamzayousuf121@gmail.com</td>
+                                    <td>23-04-2020</td>
+                                    <td>Pending</td>
+                                    <td class="dropdown text-center"><i class="fa fa-cog dropdown-toggle"
+                                            style="color:#4339cf" data-toggle="dropdown"></i>
+                                        <ul class="dropdown-menu text-center">
+                                            <li><a href="#" class="text-center">Edit</a>
+                                                <hr>
+                                            </li>
+                                            <li><a href="#" class="text-center">Detail</a>
+                                                <hr>
+                                            </li>
+                                            <li><a href="#" class="text-center">Delete</a>
+                                                <hr>
+                                            </li>
+                                            <li><a href="#" class="text-center">Print</a>
+                                                <hr>
+                                            </li>
+                                            <li><a href="#" class="text-center">Start Service</a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1 </td>
+                                    <td>Ali shahid </td>
+                                    <td>0321-2454454</td>
+                                    <td>hamzayousuf121@gmail.com</td>
+                                    <td>23-04-2020</td>
+                                    <td>Pending</td>
+                                    <td class="dropdown text-center"><i class="fa fa-cog dropdown-toggle"
+                                            style="color:#4339cf" data-toggle="dropdown"></i>
+                                        <ul class="dropdown-menu text-center">
+                                            <li><a href="#" class="text-center">Edit</a>
+                                                <hr>
+                                            </li>
+                                            <li><a href="#" class="text-center">Detail</a>
+                                                <hr>
+                                            </li>
+                                            <li><a href="#" class="text-center">Delete</a>
+                                                <hr>
+                                            </li>
+                                            <li><a href="#" class="text-center">Print</a>
+                                                <hr>
+                                            </li>
+                                            <li><a href="#" class="text-center">Start Service</a></li>
+                                        </ul>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>1 </td>
+                                    <td>Ali shahid </td>
+                                    <td>0321-2454454</td>
+                                    <td>hamzayousuf121@gmail.com</td>
+                                    <td>23-04-2020</td>
+                                    <td>Pending</td>
+                                    <td class="dropdown text-center"><i class="fa fa-cog dropdown-toggle"
+                                            style="color:#4339cf" data-toggle="dropdown"></i>
+                                        <ul class="dropdown-menu text-center">
+                                            <li><a href="#" class="text-center">Edit</a>
+                                                <hr>
+                                            </li>
+                                            <li><a href="#" class="text-center">Detail</a>
+                                                <hr>
+                                            </li>
+                                            <li><a href="#" class="text-center">Delete</a>
+                                                <hr>
+                                            </li>
+                                            <li><a href="#" class="text-center">Print</a>
+                                                <hr>
+                                            </li>
+                                            <li><a href="#" class="text-center">Start Service</a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1 </td>
+                                    <td>Ali shahid </td>
+                                    <td>0321-2454454</td>
+                                    <td>hamzayousuf121@gmail.com</td>
+                                    <td>23-04-2020</td>
+                                    <td>Pending</td>
+                                    <td class="dropdown text-center"><i class="fa fa-cog dropdown-toggle"
+                                            style="color:#4339cf" data-toggle="dropdown"></i>
+                                        <ul class="dropdown-menu text-center">
+                                            <li><a href="#" class="text-center">Edit</a>
+                                                <hr>
+                                            </li>
+                                            <li><a href="#" class="text-center">Detail</a>
+                                                <hr>
+                                            </li>
+                                            <li><a href="#" class="text-center">Delete</a>
+                                                <hr>
+                                            </li>
+                                            <li><a href="#" class="text-center">Print</a>
+                                                <hr>
+                                            </li>
+                                            <li><a href="#" class="text-center">Start Service</a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="powered">
+            <div class="text-right"><b>GYM Managment System</b> <span style="color:gray">Powered By: </span>
+                <img src="./icons/Logo-Cybeinc.png" width="120" height="50" class="center" /></div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

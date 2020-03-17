@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Appointment form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+
+<body class="body">
+
+    <nav class="navbar navbar-expand-lg topbarblue">
+        <a href="#"><img src="./icons/SalonWiz (1).png" class="img-fluid" style="vertical-align: super;"></a><span class="white font-weight-bold" style="margin: 0% 1%;">-</span><span style="font-size: 20px" class="white omnes">POS</span>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link omnes white p-0" href="#">Salon Name - Branch Name</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item omnes white">
+              <span class="nav-link p-0">Date 18-03-2020</span>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link p-0 dropdown-toggle white omnes" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: 20px;padding-left: 40px!important;">
+                <i class="fa fa-user"></i><span style="padding:0px 8px;">Salon</span><i class="fa fa-angle-down"></i>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+           
+          </ul>
+         
+        </div>
+      </nav>
+
+
+                                                <!-- //Dashboard -->
+    <div class="container-fluid">
+    <div class="topnav row">
+        <div style="width: 155px;" class="hover">
+            <a href="#dashboard">
+                <img src="./icons/Dashboard (2).png" style="height: 40px;" />
+                Dashboard</a>
+        </div>
+
+        <div style="width: 155px;" class="hover">
+            <a href="#pos">
+                <img src="./icons/POS (2).png" alt="" style="height: 40px;">
+                POS
+            </a>
+        </div>
+        <div style="width: 155px;" class="hover">
+            <a href="#services">
+                <img src="./icons/Services (2).png" alt="Service" style="height: 40px;" />
+                Services</a>
+        </div>
+        <div style="width: 175px;" class="hover">
+            <a href="#appointmentform">
+                <img src="./icons/Appointment-Form (1).png" alt="" style="height: 40px;" /></a>
+            <span class="form">Appointment Form</span>
+        </div>
+        <div style="width: 175px;" class="hover">
+            <a href="#appointmentlist">
+                <img src="./icons/Appointment-List (1).png" alt="" style="height: 40px;"></a>
+            <span class="list">Appointment List</span>
+        </div>
+        <div style="width: 155px;" class="hover">
+            <a href="#reports">
+                <img src="./icons/Reports (1).png" alt="" style="height: 40px;">
+                Reports</a>
+        </div>
+        <div style="width: 155px;" class="hover">
+            <a href="#dayopen">
+                <img src="./icons/Day-Open (1).png" alt="" style="height: 40px; width: 50px;">
+                Day Open</a>
+        </div>
+        <div style="width: 155px;" class="hover">
+            <a href="#dayend">
+                <img src="./icons/Day-end (1).png" alt="" style="height: 40px; width: 50px;">
+                Day End</a>
+        </div>
+    </div>
+    </div>
+
+                            <!-- Dashboard Navbar End -->
+    <h3 class="text-center mt-5">Appointment Form</h3><br>
+    <div class="container">
+        <form action="" method="POST">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group row">
+                        <label id="label" class="col-sm-3 col-form-label text-right " for="name">Name:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" placeholder="Your name" id="name">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group row">
+                        <label id="label" for="contact" class="col-sm-4 col-form-label text-right">Contact:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control align-right" placeholder="Your Number" id="contact">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group row">
+                        <label id="label" class="col-sm-3 col-form-label text-right " for="name">Email:</label>
+                        <div class="col-sm-8">
+                            <input type="email" class="form-control" id="email" placeholder="Your Email Address"
+                                name="email">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group row">
+                        <label id="label" for="appointmentdate" class="col-sm-4 col-form-label text-right">Appointment
+                            Date:</label>
+                        <div class="col-sm-8">
+                            <input type="date" class="form-control align-right" placeholder="Appointment Date"
+                                id="appointmentdate">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group row">
+                        <label id="label" class="col-sm-3 col-form-label text-right " for="stylisttype">Stylist
+                            Type:</label>
+                        <div class="col-sm-8">
+                            <div class="input-group">
+                                <select name="gender" class="custom-select" id="stylisttype">
+                                    <option>Select Stylist Type</option>
+                                    <option value="frontdesk">Front Desk</option>
+                                    <option value="femalestylist">Female Stylist</option>
+                                    <option value="femaletopstylist">Female Top Stylist </option>
+                                    <option value="seniorstylist">Senior Stylist </option>
+                                    <option value="all-rounder">All-Rounder </option>
+                                    <option value="maletopstylist">Male Top Stylist</option>
+                                    <option value="femaleseniorstylist">Female Senior Stylist </option>
+                                    <option value="malestylist">Male Stylist </option>
+                                    <option value="artdirector">Art Director </option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group row">
+                        <label id="label" class="col-sm-4 col-form-label text-right "
+                            for="stylisttype">Stylists:</label>
+                        <div class="col-sm-8">
+                            <div class="input-group">
+                                <select name="stylisttype" class="custom-select" id="stylisttype">
+                                    <option>Select Stylist Type</option>
+                                    <option value="frontdesk">Front Desk</option>
+                                    <option value="femalestylist">Female Stylist</option>
+                                    <option value="femaletopstylist">Female Top Stylist </option>
+                                    <option value="seniorstylist">Senior Stylist </option>
+                                    <option value="all-rounder">All-Rounder </option>
+                                    <option value="maletopstylist">Male Top Stylist</option>
+                                    <option value="femaleseniorstylist">Female Senior Stylist </option>
+                                    <option value="malestylist">Male Stylist </option>
+                                    <option value="artdirector">Art Director </option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group row">
+                        <label id="label" for="usertype " class="col-sm-3 col-form-label text-right">Time Slots:</label>
+                        <div class="col-sm-8">
+                            <div class="input-group">
+                                <select name="usertype" class="custom-select" id="User Type:" multiple>
+                                    <option>Select Time Slots:</option>
+                                    <option value="">10:00 AM - 11:00 AM</option>
+                                    <option value="">11:00 AM - 12:00 AM</option>
+                                    <option value="">12:00 AM - 01:00 PM</option>
+                                    <option value="">01:00 PM - 02:00 PM</option>
+                                    <option value="">02:00 PM - 03:00 PM</option>
+                                    <option value="">03:00 PM - 04:00 PM</option>
+                                    <option value="">04:00 PM - 05:00 PM</option>
+                                    <option value="">05:00 PM - 06:00 PM</option>
+                                    <option value="">06:00 PM - 07:00 PM</option>
+                                    <option value="">07:00 PM - 08:00 PM</option>
+                                    <option value="">08:00 PM - 09:00 PM</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group row">
+                        <label id="label" class="col-sm-3 col-form-label text-right " for="servicetype">Service
+                            Type:</label>
+                        <div class="col-sm-8">
+                            <div class="input-group">
+                                <select name="gender" class="custom-select" id="servicetype">
+                                    <option>Select Stylist Type</option>
+                                    <option value="frontdesk">Front Desk</option>
+                                    <option value="femalestylist">Female Stylist</option>
+                                    <option value="femaletopstylist">Female Top Stylist </option>
+                                    <option value="seniorstylist">Senior Stylist </option>
+                                    <option value="all-rounder">All-Rounder </option>
+                                    <option value="maletopstylist">Male Top Stylist</option>
+                                    <option value="femaleseniorstylist">Female Senior Stylist </option>
+                                    <option value="malestylist">Male Stylist </option>
+                                    <option value="artdirector">Art Director </option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group row">
+                        <label id="label" class="col-sm-4 col-form-label text-right " for="typeofservices">Type of
+                            Services:</label>
+                        <div class="col-sm-8">
+                            <div class="input-group">
+                                <select name="typeofservices" class="custom-select" id="typeofservices">
+                                    <option>Select Stylist Type</option>
+                                    <option value="frontdesk">Front Desk</option>
+                                    <option value="femalestylist">Female Stylist</option>
+                                    <option value="femaletopstylist">Female Top Stylist </option>
+                                    <option value="seniorstylist">Senior Stylist </option>
+                                    <option value="all-rounder">All-Rounder </option>
+                                    <option value="maletopstylist">Male Top Stylist</option>
+                                    <option value="femaleseniorstylist">Female Senior Stylist </option>
+                                    <option value="malestylist">Male Stylist </option>
+                                    <option value="artdirector">Art Director </option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group row">
+                        <label id="label" for="selectservices " class="col-sm-3 col-form-label text-right">Selected
+                            Services:</label>
+                        <div class="col-sm-8">
+                            <div class="input-group">
+                                <select name="selectservices" class="custom-select" id="selectservices" multiple>
+
+
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group row">
+                        <label id="label" class="col-sm-3 col-form-label text-right " for="advance">Advance:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="advance" placeholder="Advance Amount"
+                                name="advance">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group row">
+                        <label id="label" class="col-sm-4 col-form-label text-right " for="typeofservices">Payment
+                            Method:</label>
+
+                        <div class="col-sm-8">
+                            <div class="input-group">
+                                <select name="typeofservices" class="custom-select" id="typeofservices">
+                                    <option>Select Stylist Type</option>
+                                    <option value="cash">Cash</option>
+                                    <option value="bank">Bank</option>
+
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+
+
+            <div class=" offset-lg-5">
+                <span style="margin-left:20px;">
+
+                    <button type="submit" class="btn btn-secondary  ">Reset</button>
+
+                    <button id="send" type="submit" class="btn btn-info appointment">Confirm Appointment</button>
+                </span>
+                <div class="plusBtn"><button type="button" onclick="doubleForm()" class="btn btn-info"><i class="fa fa-plus" style="font-size:20px;"></i></button></div>
+
+            </div>
+        </form>
+    </div>
+
+    </div>
+
+    <br>
+    <div id="newForm"></div>
+    <footer">
+        <div class="powered">
+            <div class="text-right"><b>GYM Managment System</b> <span style="color:gray">Powered By: </span><img
+                    src="./icons/Logo-Cybeinc.png" width="120" height="50" class="center" /></div>
+        </div>
+        </footer>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+        <script>
+            var data = `<div class="container">
+        <form action="" method="POST">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group row">
+                        <label id="label" class="col-sm-3 col-form-label text-right " for="name">Name:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" placeholder="Your name" id="name">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group row">
+                        <label id="label" for="contact" class="col-sm-4 col-form-label text-right">Contact:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control align-right" placeholder="Your Number" id="contact">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group row">
+                        <label id="label" class="col-sm-3 col-form-label text-right " for="name">Email:</label>
+                        <div class="col-sm-8">
+                            <input type="email" class="form-control" id="email" placeholder="Your Email Address"
+                                name="email">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group row">
+                        <label id="label" for="appointmentdate" class="col-sm-4 col-form-label text-right">Appointment
+                            Date:</label>
+                        <div class="col-sm-8">
+                            <input type="date" class="form-control align-right" placeholder="Appointment Date"
+                                id="appointmentdate">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group row">
+                        <label id="label" class="col-sm-3 col-form-label text-right " for="stylisttype">Stylist
+                            Type:</label>
+                        <div class="col-sm-8">
+                            <div class="input-group">
+                                <select name="gender" class="custom-select" id="stylisttype">
+                                    <option>Select Stylist Type</option>
+                                    <option value="frontdesk">Front Desk</option>
+                                    <option value="femalestylist">Female Stylist</option>
+                                    <option value="femaletopstylist">Female Top Stylist </option>
+                                    <option value="seniorstylist">Senior Stylist </option>
+                                    <option value="all-rounder">All-Rounder </option>
+                                    <option value="maletopstylist">Male Top Stylist</option>
+                                    <option value="femaleseniorstylist">Female Senior Stylist </option>
+                                    <option value="malestylist">Male Stylist </option>
+                                    <option value="artdirector">Art Director </option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group row">
+                        <label id="label" class="col-sm-4 col-form-label text-right "
+                            for="stylisttype">Stylists:</label>
+                        <div class="col-sm-8">
+                            <div class="input-group">
+                                <select name="stylisttype" class="custom-select" id="stylisttype">
+                                    <option>Select Stylist Type</option>
+                                    <option value="frontdesk">Front Desk</option>
+                                    <option value="femalestylist">Female Stylist</option>
+                                    <option value="femaletopstylist">Female Top Stylist </option>
+                                    <option value="seniorstylist">Senior Stylist </option>
+                                    <option value="all-rounder">All-Rounder </option>
+                                    <option value="maletopstylist">Male Top Stylist</option>
+                                    <option value="femaleseniorstylist">Female Senior Stylist </option>
+                                    <option value="malestylist">Male Stylist </option>
+                                    <option value="artdirector">Art Director </option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group row">
+                        <label id="label" for="usertype " class="col-sm-3 col-form-label text-right">Time Slots:</label>
+                        <div class="col-sm-8">
+                            <div class="input-group">
+                                <select name="usertype" class="custom-select" id="User Type:" multiple>
+                                    <option>Select Time Slots:</option>
+                                    <option value="">10:00 AM - 11:00 AM</option>
+                                    <option value="">11:00 AM - 12:00 AM</option>
+                                    <option value="">12:00 AM - 01:00 PM</option>
+                                    <option value="">01:00 PM - 02:00 PM</option>
+                                    <option value="">02:00 PM - 03:00 PM</option>
+                                    <option value="">03:00 PM - 04:00 PM</option>
+                                    <option value="">04:00 PM - 05:00 PM</option>
+                                    <option value="">05:00 PM - 06:00 PM</option>
+                                    <option value="">06:00 PM - 07:00 PM</option>
+                                    <option value="">07:00 PM - 08:00 PM</option>
+                                    <option value="">08:00 PM - 09:00 PM</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group row">
+                        <label id="label" class="col-sm-3 col-form-label text-right " for="servicetype">Service
+                            Type:</label>
+                        <div class="col-sm-8">
+                            <div class="input-group">
+                                <select name="gender" class="custom-select" id="servicetype">
+                                    <option>Select Stylist Type</option>
+                                    <option value="frontdesk">Front Desk</option>
+                                    <option value="femalestylist">Female Stylist</option>
+                                    <option value="femaletopstylist">Female Top Stylist </option>
+                                    <option value="seniorstylist">Senior Stylist </option>
+                                    <option value="all-rounder">All-Rounder </option>
+                                    <option value="maletopstylist">Male Top Stylist</option>
+                                    <option value="femaleseniorstylist">Female Senior Stylist </option>
+                                    <option value="malestylist">Male Stylist </option>
+                                    <option value="artdirector">Art Director </option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group row">
+                        <label id="label" class="col-sm-4 col-form-label text-right " for="typeofservices">Type of
+                            Services:</label>
+                        <div class="col-sm-8">
+                            <div class="input-group">
+                                <select name="typeofservices" class="custom-select" id="typeofservices">
+                                    <option>Select Stylist Type</option>
+                                    <option value="frontdesk">Front Desk</option>
+                                    <option value="femalestylist">Female Stylist</option>
+                                    <option value="femaletopstylist">Female Top Stylist </option>
+                                    <option value="seniorstylist">Senior Stylist </option>
+                                    <option value="all-rounder">All-Rounder </option>
+                                    <option value="maletopstylist">Male Top Stylist</option>
+                                    <option value="femaleseniorstylist">Female Senior Stylist </option>
+                                    <option value="malestylist">Male Stylist </option>
+                                    <option value="artdirector">Art Director </option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group row">
+                        <label id="label" for="selectservices " class="col-sm-3 col-form-label text-right">Selected
+                            Services:</label>
+                        <div class="col-sm-8">
+                            <div class="input-group">
+                                <select name="selectservices" class="custom-select" id="selectservices" multiple>
+
+
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group row">
+                        <label id="label" class="col-sm-3 col-form-label text-right " for="advance">Advance:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="advance" placeholder="Advance Amount"
+                                name="advance">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group row">
+                        <label id="label" class="col-sm-4 col-form-label text-right " for="typeofservices">Payment
+                            Method:</label>
+
+                        <div class="col-sm-8">
+                            <div class="input-group">
+                                <select name="typeofservices" class="custom-select" id="typeofservices">
+                                    <option>Select Stylist Type</option>
+                                    <option value="cash">Cash</option>
+                                    <option value="bank">Bank</option>
+
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div id="newForm"></div>`;
+            function doubleForm(){
+                document.getElementById('newForm').innerHTML = data;
+            }
+        </script>
+</body>
+
+</html>
